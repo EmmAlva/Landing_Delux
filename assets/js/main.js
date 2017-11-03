@@ -1,5 +1,5 @@
 $('.carousel').carousel()
-var search = document.getElementById("search-clic");
+var search = document.getElementById("search");
 // var spotlight = document.getElementById("search-spotlight");
 var carouselImg = document.getElementsByClassName("carousel-img");
 // var carouselImg = document.getElementsByClassName("carousel-img")[1];
