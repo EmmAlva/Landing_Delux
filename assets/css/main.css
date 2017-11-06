@@ -275,7 +275,6 @@ h3 {
 
 .news-more {
   position: absolute;
-  background: red;
   bottom: 0;
   right: 0; }
   .news-more svg {
@@ -372,6 +371,35 @@ a {
   cursor: pointer; }
   .redes svg:hover circle:first-child {
     fill: #b5191b; }
+
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #e52234;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  #scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff; }
+  #scroll:hover {
+    background-color: #c6161a;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)"; }
 
 @media only screen and (min-width: 320px) {
   section h1 {
@@ -488,7 +516,7 @@ a {
   .news-date {
     font-size: 1rem; }
 
-  .news-more {
+  .news-more svg {
     width: 55px; }
 
   footer .row p {
@@ -624,7 +652,7 @@ a {
     border-bottom-left-radius: 30%; }
 
   .play-icon {
-    width: 60px;
+    width: 70px;
     top: 40%;
     left: 45%; }
 
@@ -652,6 +680,9 @@ a {
 
   .news-p {
     font-size: 2rem; }
+
+  .news-more svg {
+    width: 40px; }
 
   /* FOOTER */
   footer {
@@ -864,6 +895,14 @@ a {
 
   .redes svg {
     width: 60px;
-    margin: 0 10px; } }
+    margin: 0 10px; }
+
+  #scroll {
+    width: 80px;
+    height: 80px; }
+    #scroll span {
+      margin-left: -14px;
+      margin-top: -20px;
+      border-width: 13px; } }
 
 /*# sourceMappingURL=main.css.map */
