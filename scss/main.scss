@@ -58,9 +58,6 @@ body{
 .push{
     height: 701px;
 }
-.icon-landing{
-    width: 24px;
-}
 .m-0{
     margin: 0;
 }
@@ -68,8 +65,7 @@ body{
     padding: 0;
 }
 .menu:hover{
-    border-bottom: 3px solid $btn-red; 
-    transition: 500ms ease-out;    
+    border-bottom: 3px solid $btn-red;   
 }
 .btn-outline-danger{
     color:  $btn-red !important;
@@ -77,7 +73,6 @@ body{
 }
 .btn-outline-danger:hover{
     color:white !important;
-    font-weight: 400 !important;
 }
 section{
     padding: 0 30px;
@@ -98,12 +93,15 @@ section{
         path{
             fill:white;
         }
-        transition: all 0.8s ease-out;
     }
+}
+#icon-search{
+    width: 22px;
+    margin-left: 6px;
 }
 .btn-lg{
     margin: 0 auto;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding: 2px 4px;
     margin-bottom: 15px;
     &:hover{
@@ -146,7 +144,7 @@ nav a{
     color: $dark-text;
 }
 .nav-item{
-    margin: 10px;
+    margin: 0 10px;
     button{
         &:hover{
             cursor: pointer;
@@ -239,6 +237,9 @@ h3{
 }
 .course-time{
     font-size: 12px;
+    svg{
+        width: 20px;
+    }
 }
 .modal-course{
     position: absolute;
@@ -303,7 +304,14 @@ h3{
         display: flex;
         justify-content: center;
     }
+    .card-img{
+        &:hover{
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+    }
 }
+
 .news-p{
     font-size: 15px;
 }
@@ -339,7 +347,7 @@ h3{
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 48px;
+        width: 31px;
     }
     &:hover{
         cursor: pointer;
@@ -349,12 +357,6 @@ h3{
     }
 }
 
-.news-img{
-    &:hover{
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-}
 .card-img-overlay{
     display: flex;
     flex-direction: column;
@@ -382,7 +384,7 @@ footer{
         font-size: 1.2rem;
     }
     > p{
-        background: $oil;
+        background: $dark-text;
         font-size: 0.7rem;
         padding: 5px 0;
     }
@@ -412,9 +414,6 @@ footer{
             color: white;
         }
     }
-}
-.redes img{
-    margin: 0 5px;
 }
 
 .btn-bord{
@@ -449,14 +448,22 @@ a{
     }
 } 
 .contact-us{
-    .redes{
-        width: 100%;
-        margin: 20px auto;
-    }
     span{
         font-size: 0.8rem;
     }
 } 
+.redes{
+    svg{
+        width: 24px;
+        margin: 20px 5px;
+        &:hover{
+            circle:first-child{
+                fill: $intense-red;
+            }
+    }   
+        cursor: pointer;
+    }
+}
 @include extrasmall{
     section{
         h1{
@@ -474,6 +481,7 @@ a{
     .push{
         height: 682px;
     }
+ 
     footer{
         height: 682px;
     }
@@ -487,6 +495,11 @@ a{
     }
     footer{
         height: 662px;
+    }
+    .play-icon{
+        width: 54px;
+        top: 36%;
+        left: 43%;
     }
 }
 @include small {
@@ -567,6 +580,11 @@ a{
         font-size: 28px;
         }
     } 
+    .play-icon{
+        width: 14%;
+        top: 40%;
+        left: 45%;
+    }
     .news-p{
         font-size: 1.3rem;
     }
@@ -587,6 +605,9 @@ a{
     }
     .news-date{
         font-size: 1rem;
+    }
+    .news-more{
+        width: 55px;
     }
     footer{
         .row {
@@ -614,6 +635,12 @@ a{
             font-size: 0.9rem;
         }
     }  
+    .redes{
+        svg{
+            width: 30px;
+            margin: 17px 5px;
+        }
+    }
 }
 @include medium {
     section {
@@ -625,6 +652,9 @@ a{
     .btn-lg{
         font-size: 1.4rem;
         padding: 7px 19px;
+    }
+    #icon-search{
+        margin-left:0;
     }
  
     .wrapper {
@@ -650,6 +680,12 @@ a{
     .card-deck{
         flex-flow: row nowrap;
     }
+    .redes{
+        svg{
+            width: 35px;
+            margin: 0 6px;
+        }
+    }
 }
 @include desktop{
     section {
@@ -658,9 +694,10 @@ a{
             padding: 25px;
         }
     }
+   
     .btn-lg{
-        font-size: 1.5rem;
-        padding: 7px 19px;
+        font-size: 1.8rem;
+        padding: 10px 22px;
     }
     .btn-more{
         font-size: 1.2rem;
@@ -808,17 +845,6 @@ a{
         margin: 0px ;
         margin-top: 50px;
     }
-    .redes {
-        img{
-            margin: 0 13px;
-            transform: scale(1.2);
-        }
-    }
-    .redes {
-        img:hover{
-            transform: scale(1.1);
-        }
-    }
     .subscribe{
         margin: 20px;
         button{
@@ -829,11 +855,24 @@ a{
             font-size: 0.9rem;
         }
     }
-    .contact-us span{
-        font-size: 1.1rem;
+    .contact-us{
+        h6{
+            font-size: 1.5rem;
+        }
+        span{
+            font-size: 1rem;
+        }
+        .address{
+            p{
+                font-size: 1rem;
+            }
+        }
     }
-    .address p{
-        font-size: 1rem;
+    .redes{
+        svg{
+            width: 38px;
+            margin: 0 6px;
+        }
     }
 }
 @include extralarge {
@@ -845,7 +884,8 @@ a{
     }
     .btn-lg{
         font-size: 3rem;
-        padding: 7px 19px;
+        padding: 20px 50px;
+        border-radius: 5%;
     }
     .btn-more{
         font-size: 2rem;
@@ -863,6 +903,14 @@ a{
     .push{
         height: 643px;
     }
+    #search{
+        width: 80px;
+        height: 80px;
+    }
+    #icon-search{
+       width: 45px;
+       margin: 6px;
+    }
     nav {
         .container-fluid{
             padding: 20px 50px;
@@ -876,7 +924,7 @@ a{
     .nav-link{
         font-size: 2rem;
     }
-     .nav-item{
+    .nav-item{
         margin: 1.5rem;
     } 
     .carousel-control-next-icon,.carousel-control-prev-icon{
@@ -927,14 +975,20 @@ a{
     }
     .course-time{
         font-size: 1.3rem;
+        svg{
+            width: 35px;
+        }
     }
     .modal-course{
         right: 15%;
+        svg{
+            width: 50px;
+        }
     }
     .tag-soon{       
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 8px;
-        border-bottom-left-radius: 30%;
+        border-bottom-left-radius: 15px;
     }   
     #about {
         .container{
@@ -942,8 +996,9 @@ a{
         }
     }
     .play-icon{
-        top: 33%;
-        left: 43%;
+        top: 38%;
+        left: 42%;
+        width: 140px;
     }
      .text-about {
         p{
@@ -951,7 +1006,7 @@ a{
         }
      }
      /* NEWS */
-     #news {
+    #news {
         .container{
             max-width: 1770px;
         }
@@ -981,6 +1036,13 @@ a{
             justify-content: flex-end;
         }
     }    
+    .news-more{
+        svg{
+            bottom: 2px;
+            right: 2px;
+            width: 80px;
+        }
+    }
     /* FOOTER */
     footer{
         height: 643px;
@@ -997,7 +1059,7 @@ a{
             font-size: 3rem;
         }
         p{
-            font-size: 1.9rem;
+            font-size: 1.2rem;
         }
         .nav-link{
             font-size: 1.5rem;
@@ -1011,16 +1073,29 @@ a{
         margin: 20px;
     }
     .subscribe button{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         padding:12px;
     }
     .subscribe input::placeholder{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }  
-    .contact-us span{
-        font-size: 1.7rem;
+    .contact-us{
+        h6{
+            font-size: 2rem;
+        }
+        span{
+            font-size: 1.5rem;
+        }
+        .address{
+            p{
+                font-size: 1.5rem;
+            }
+        }
     }
-    .contact-us h6{
-        font-size: 2rem;
+    .redes{
+        svg{
+        width: 60px;
+        margin: 0 10px;
+        }
     }
 }
