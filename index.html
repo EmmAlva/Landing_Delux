@@ -14,35 +14,21 @@
 <body>
 <div class="wrapper">
     <main class="main" role="main">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav id="nav-landing" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Brand -->
             <a class="navbar-brand text-center" href="#">
                 <img class="img-fluid mx-auto d-none d-md-block " src="assets/icon/logo_last.svg" alt="logo">
                 <img class="img-fluid mx-auto d-block d-md-none" src="assets/img/logo_lg.png" alt="logo">
             </a>
-            <!-- Links -->
             <div  class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul  class="navbar-nav">
-                    <li class="nav-item">
-                    <a href="#" id="search" data-toggle="modal" data-target="#exampleModal" class=" nav-link">
-                        <svg version="1.1" id="icon-search" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                            <g id="preview_4_">
-                           <g>
-                               <path fill="#E62937" d="M8.6,0.1c3.6,0,7,2.2,8.2,5.9c1.6,4.5-0.8,9.5-5.4,11.1c-0.9,0.3-1.9,0.5-2.8,0.5c-3.6,0-7-2.3-8.2-5.9
-                                   C-1.1,7.2,1.3,2.2,5.8,0.6C6.8,0.3,7.7,0.1,8.6,0.1 M8.6,2.5C8,2.5,7.3,2.6,6.6,2.8l0,0C5,3.4,3.7,4.6,3,6.1
-                                   c-0.7,1.5-0.8,3.2-0.3,4.9c0.9,2.5,3.3,4.3,6,4.3c0.7,0,1.4-0.1,2.1-0.3c1.6-0.5,2.9-1.7,3.6-3.2s0.8-3.2,0.3-4.9
-                                   C13.8,4.2,11.3,2.5,8.6,2.5L8.6,2.5z"/>
-                           </g>
-                           <path fill="#E62937" d="M21.6,22.7c0.6,0.5,1.5,0.4,2-0.1l0,0c0.5-0.6,0.4-1.5-0.1-2l-5.9-5c-0.6-0.5-1.5-0.4-2,0.1l0,0
-                               c-0.5,0.6-0.4,1.5,0.1,2L21.6,22.7z"/>
-                       </g>
-                       </svg>
-                    </a>
+                    <li class="nav-item ">
+                        <div class="search">
+                              <span class="icon-search"> </span>
+                        </div>
                     </li>
                     <li  class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,7 +43,7 @@
                         <a class="dropdown-item" href="#">Deutsch</a>
                     </div>
                     </li>
-                    <li  class="nav-item menu"><!--active-->
+                    <li  class="nav-item menu">
                     <a class="nav-link " href="#browser-courses">Catalogue<span class="sr-only">(current)</span></a>
                     </li>
                     <li  class="nav-item menu">
@@ -67,10 +53,10 @@
                     <a class="nav-link" href="#">News</a>
                     </li>
                     <li class="nav-item ">
-                    <button class="nav-link btn btn-outline-danger" href="#">Sign In</button>
+                    <button class="nav-link btn btn-outline-danger" >Sign In</button>
                     </li>
                     <li class="nav-item" >
-                    <button class="nav-link btn btn-outline-danger"  href="#">Sign Up</button>
+                    <button class="nav-link btn btn-outline-danger" >Sign Up</button>
                     </li>      
                 </ul>
             </div>  
@@ -83,35 +69,11 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-
-     <!-- Modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div id="search-spotlight" class="" >
-                        <img class="search d-lg-block d-block " src="assets/img/search_slider_sm.png" alt="searchSlider">
-                        <!-- <img class="search d-lg-none d-none " src="img/search_slider.png" alt="searchSlider"> -->
-                        <input type="text" placeholder="Search here...">
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-
     <div class="carousel-inner" >
         <div class="carousel-item active" >
             <img  class="d-block w-100 carousel-img" src="assets/img/slider_img0.jpg" alt="First slide">
             <div class="text-slider d-flex flex-column justify-content-around">
                 <h1 class="text-center">KNOW, IMAGE, CREATE</h1>
-                <div id="search-spotlight" class="d-none" >
-                    <img class="search d-lg-block d-none " src="assets/img/search_slider.png" alt="searchSlider">
-                    <img class="search d-lg-none d-block " src="assets/img/search_slider_sm.png" alt="searchSlider">
-                    <input type="text" placeholder="Search here...">
-                </div>
                 <h2 class="text-center">Mauris in lectus non ante lobortis fermentum a quis nunc. 
                     Curabitur auctor turpis vitae sodales feugiat. Mauris nunc libero, 
                     hendrerit et di um et malesuada fames ac ante ipsum primis in
@@ -123,11 +85,7 @@
             <img  class="d-block w-100 carousel-img" src="assets/img/slider_img0.jpg" alt="First slide">
             <div class="text-slider d-flex flex-column justify-content-around">
                 <h1 class="text-center">KNOW, IMAGE, CREATE</h1>
-                <div id="search-spotlight" class="d-none" >
-                    <img class="search d-lg-block d-none " src="assets/img/search_slider.png" alt="searchSlider">
-                    <img class="search d-lg-none d-block " src="assets/img/search_slider_sm.png" alt="searchSlider">
-                    <input type="text" placeholder="Search here...">
-                </div>
+               
                 <h2 class="text-center">Mauris in lectus non ante lobortis fermentum a quis nunc. 
                     Curabitur auctor turpis vitae sodales feugiat. Mauris nunc libero, 
                     hendrerit et di um et malesuada fames ac ante ipsum primis in
@@ -139,11 +97,7 @@
             <img  class="d-block w-100 carousel-img" src="assets/img/slider_img0.jpg" alt="First slide">
             <div class="text-slider d-flex flex-column justify-content-around">
                 <h1 class="text-center">KNOW, IMAGE, CREATE</h1>
-                <div id="search-spotlight" class="d-none" >
-                    <img class="search d-lg-block d-none " src="assets/img/search_slider.png" alt="searchSlider">
-                    <img class="search d-lg-none d-block " src="assets/img/search_slider_sm.png" alt="searchSlider">
-                    <input type="text" placeholder="Search here...">
-                </div>
+                
                 <h2 class="text-center">Mauris in lectus non ante lobortis fermentum a quis nunc. 
                     Curabitur auctor turpis vitae sodales feugiat. Mauris nunc libero, 
                     hendrerit et di um et malesuada fames ac ante ipsum primis in
@@ -181,44 +135,14 @@
                                     lobortis fermentum as nunct.
                                     </p>
                                     <div class="course-time">
-                                        <svg version="1.1" id="calendar" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <path fill="#E8A126" d="M18.6,3.8h-13c-3,0-5.5,2.1-5.5,4.6v10.9c0,2.6,2.5,4.6,5.5,4.6h13c3,0,5.5-2.1,5.5-4.6l0,0V8.4
-                                               C24.1,5.9,21.6,3.8,18.6,3.8z M21.5,18.6L21.5,18.6c0,1.8-1.9,3.3-4.3,3.3H7c-2.4,0-4.3-1.5-4.3-3.3V11c0-1.8,1.9-3.3,4.3-3.3h10.2
-                                               c2.4,0,4.3,1.5,4.3,3.3C21.5,11,21.5,18.6,21.5,18.6z"/>
-                                               <polyline fill="none" stroke="#E8A126" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                               7.4,13.4 9.7,17 16.2,10.2 	"/>
-                                           <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M17.1,6.6H16c-0.5,0-0.9-0.4-0.9-0.9V2.1
-                                               c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C18,6.2,17.6,6.6,17.1,6.6z"/>
-                                           <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M12.6,6.5h-1.1c-0.5,0-0.9-0.4-0.9-0.9V2
-                                               c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C13.5,6.2,13.1,6.5,12.6,6.5z"/>
-                                           <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M8,6.6H6.9C6.4,6.6,6,6.2,6,5.7V2.1
-                                               c0-0.5,0.4-0.9,0.9-0.9H8c0.5,0,0.9,0.4,0.9,0.9v3.6C8.9,6.2,8.5,6.6,8,6.6z"/>
-                                            </g>
-                                       </svg>
+                                        <span class="icon-calendar"> </span>
                                        <span><strong> Start:</strong> 12/05/2018</span>
                                         <br>
-                                        <div style="margin-top:5px;"><strong>Duration: </strong> 50 hrs.</div>
+                                        <div><strong>Duration: </strong> 50 hrs.</div>
                                     </div>
-                                    <a class="modal-course" href="#" >
-                                        <svg version="1.1" id="modal-courses" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <circle fill="#E62B38" cx="12" cy="12" r="12"/>
-                                                <g>
-                                                <path fill="#FCFCFC" d="M7.9,5.2c-1.2,0-2.2,1-2.2,2.1c0,1.2,1,2.1,2.2,2.1s2.2-1,2.2-2.1S9.1,5.2,7.9,5.2z M8,7.2
-                                                   C8,7.3,8,7.3,8,7.2L7.4,7.8c-0.1,0.1-0.1,0.1-0.2,0s-0.1-0.1,0-0.2l0.5-0.5V5.8c0-0.1,0.1-0.1,0.1-0.1l0.1,0.1L8,7.2L8,7.2L8,7.2
-                                                   L8,7.2z"/>
-                                                <path fill="#FCFCFC" d="M17.6,4.9c-0.3-0.2-0.5-0.3-0.8-0.3c-0.4,0-0.7,0.2-1,0.5s-0.4,0.7-0.6,1c-0.1,0.1-0.1,0.2-0.1,0.2
-                                                   l2.3,1.3c0.1-0.1,0.1-0.2,0.2-0.2c0.2-0.3,0.4-0.6,0.5-0.9C18.5,5.8,18.3,5.2,17.6,4.9z"/>
-                                                <path fill="#FCFCFC" d="M15,6.7c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.1,0.1-0.1,0.2c-0.5,0.8-0.9,1.5-1.3,2.3
-                                                   c-1.2,2-2.3,4.1-3.6,6.1c-0.6,0.9-0.6,1.8-0.6,2.8c0,0.4,0,0.7-0.1,1.1c0.2-0.1,0.3-0.2,0.5-0.3c0.5-0.3,0.9-0.6,1.3-0.9
-                                                   c0.4-0.3,0.9-0.7,1.1-1.2c1.4-2.3,2.7-4.6,4-6.9c0.4-0.7,0.8-1.3,1.1-1.9c0.1-0.1,0.1-0.1,0.1-0.2L15,6.7z"/>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </a>
+                                    <div class="modal-course">
+                                        <span class="icon-modal"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -239,49 +163,19 @@
                                     lobortis fermentum as nunct.
                                     </p>
                                     <div class="course-time">
-                                        <svg version="1.1" id="calendar" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <path fill="#E8A126" d="M18.6,3.8h-13c-3,0-5.5,2.1-5.5,4.6v10.9c0,2.6,2.5,4.6,5.5,4.6h13c3,0,5.5-2.1,5.5-4.6l0,0V8.4
-                                                C24.1,5.9,21.6,3.8,18.6,3.8z M21.5,18.6L21.5,18.6c0,1.8-1.9,3.3-4.3,3.3H7c-2.4,0-4.3-1.5-4.3-3.3V11c0-1.8,1.9-3.3,4.3-3.3h10.2
-                                                c2.4,0,4.3,1.5,4.3,3.3C21.5,11,21.5,18.6,21.5,18.6z"/>
-                                                <polyline fill="none" stroke="#E8A126" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                                7.4,13.4 9.7,17 16.2,10.2 	"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M17.1,6.6H16c-0.5,0-0.9-0.4-0.9-0.9V2.1
-                                                c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C18,6.2,17.6,6.6,17.1,6.6z"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M12.6,6.5h-1.1c-0.5,0-0.9-0.4-0.9-0.9V2
-                                                c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C13.5,6.2,13.1,6.5,12.6,6.5z"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M8,6.6H6.9C6.4,6.6,6,6.2,6,5.7V2.1
-                                                c0-0.5,0.4-0.9,0.9-0.9H8c0.5,0,0.9,0.4,0.9,0.9v3.6C8.9,6.2,8.5,6.6,8,6.6z"/>
-                                            </g>
-                                        </svg>
-                                        <span><strong> Start:</strong> 12/05/2018</span>
+                                        <span class="icon-calendar"> </span>
+                                    <span><strong> Start:</strong> 12/05/2018</span>
                                         <br>
-                                        <div style="margin-top:5px;"><strong>Duration: </strong> 50 hrs.</div>
+                                        <div><strong>Duration: </strong> 50 hrs.</div>
                                     </div>
-                                    <a class="modal-course" href="#" >
-                                        <svg version="1.1" id="modal-courses" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <circle fill="#E62B38" cx="12" cy="12" r="12"/>
-                                                <g>
-                                                <path fill="#FCFCFC" d="M7.9,5.2c-1.2,0-2.2,1-2.2,2.1c0,1.2,1,2.1,2.2,2.1s2.2-1,2.2-2.1S9.1,5.2,7.9,5.2z M8,7.2
-                                                    C8,7.3,8,7.3,8,7.2L7.4,7.8c-0.1,0.1-0.1,0.1-0.2,0s-0.1-0.1,0-0.2l0.5-0.5V5.8c0-0.1,0.1-0.1,0.1-0.1l0.1,0.1L8,7.2L8,7.2L8,7.2
-                                                    L8,7.2z"/>
-                                                <path fill="#FCFCFC" d="M17.6,4.9c-0.3-0.2-0.5-0.3-0.8-0.3c-0.4,0-0.7,0.2-1,0.5s-0.4,0.7-0.6,1c-0.1,0.1-0.1,0.2-0.1,0.2
-                                                    l2.3,1.3c0.1-0.1,0.1-0.2,0.2-0.2c0.2-0.3,0.4-0.6,0.5-0.9C18.5,5.8,18.3,5.2,17.6,4.9z"/>
-                                                <path fill="#FCFCFC" d="M15,6.7c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.1,0.1-0.1,0.2c-0.5,0.8-0.9,1.5-1.3,2.3
-                                                    c-1.2,2-2.3,4.1-3.6,6.1c-0.6,0.9-0.6,1.8-0.6,2.8c0,0.4,0,0.7-0.1,1.1c0.2-0.1,0.3-0.2,0.5-0.3c0.5-0.3,0.9-0.6,1.3-0.9
-                                                    c0.4-0.3,0.9-0.7,1.1-1.2c1.4-2.3,2.7-4.6,4-6.9c0.4-0.7,0.8-1.3,1.1-1.9c0.1-0.1,0.1-0.1,0.1-0.2L15,6.7z"/>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </a>
+                                    <div class="modal-course ">
+                                        <span class="icon-modal"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="card-deck">
                 <div class="card">
@@ -299,44 +193,14 @@
                                     lobortis fermentum as nunct.
                                     </p>
                                     <div class="course-time">
-                                        <svg version="1.1" id="calendar" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <path fill="#E8A126" d="M18.6,3.8h-13c-3,0-5.5,2.1-5.5,4.6v10.9c0,2.6,2.5,4.6,5.5,4.6h13c3,0,5.5-2.1,5.5-4.6l0,0V8.4
-                                                C24.1,5.9,21.6,3.8,18.6,3.8z M21.5,18.6L21.5,18.6c0,1.8-1.9,3.3-4.3,3.3H7c-2.4,0-4.3-1.5-4.3-3.3V11c0-1.8,1.9-3.3,4.3-3.3h10.2
-                                                c2.4,0,4.3,1.5,4.3,3.3C21.5,11,21.5,18.6,21.5,18.6z"/>
-                                                <polyline fill="none" stroke="#E8A126" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                                7.4,13.4 9.7,17 16.2,10.2 	"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M17.1,6.6H16c-0.5,0-0.9-0.4-0.9-0.9V2.1
-                                                c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C18,6.2,17.6,6.6,17.1,6.6z"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M12.6,6.5h-1.1c-0.5,0-0.9-0.4-0.9-0.9V2
-                                                c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C13.5,6.2,13.1,6.5,12.6,6.5z"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M8,6.6H6.9C6.4,6.6,6,6.2,6,5.7V2.1
-                                                c0-0.5,0.4-0.9,0.9-0.9H8c0.5,0,0.9,0.4,0.9,0.9v3.6C8.9,6.2,8.5,6.6,8,6.6z"/>
-                                            </g>
-                                        </svg>
+                                        <span class="icon-calendar"> </span>
                                         <span><strong> Start:</strong> 12/05/2018</span>
                                         <br>
-                                        <div style="margin-top:5px;"><strong>Duration: </strong> 50 hrs.</div>
+                                        <div><strong>Duration: </strong> 50 hrs.</div>
                                     </div>
-                                    <a class="modal-course" href="#" >
-                                        <svg version="1.1" id="modal-courses" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <circle fill="#E62B38" cx="12" cy="12" r="12"/>
-                                                <g>
-                                                <path fill="#FCFCFC" d="M7.9,5.2c-1.2,0-2.2,1-2.2,2.1c0,1.2,1,2.1,2.2,2.1s2.2-1,2.2-2.1S9.1,5.2,7.9,5.2z M8,7.2
-                                                    C8,7.3,8,7.3,8,7.2L7.4,7.8c-0.1,0.1-0.1,0.1-0.2,0s-0.1-0.1,0-0.2l0.5-0.5V5.8c0-0.1,0.1-0.1,0.1-0.1l0.1,0.1L8,7.2L8,7.2L8,7.2
-                                                    L8,7.2z"/>
-                                                <path fill="#FCFCFC" d="M17.6,4.9c-0.3-0.2-0.5-0.3-0.8-0.3c-0.4,0-0.7,0.2-1,0.5s-0.4,0.7-0.6,1c-0.1,0.1-0.1,0.2-0.1,0.2
-                                                    l2.3,1.3c0.1-0.1,0.1-0.2,0.2-0.2c0.2-0.3,0.4-0.6,0.5-0.9C18.5,5.8,18.3,5.2,17.6,4.9z"/>
-                                                <path fill="#FCFCFC" d="M15,6.7c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.1,0.1-0.1,0.2c-0.5,0.8-0.9,1.5-1.3,2.3
-                                                    c-1.2,2-2.3,4.1-3.6,6.1c-0.6,0.9-0.6,1.8-0.6,2.8c0,0.4,0,0.7-0.1,1.1c0.2-0.1,0.3-0.2,0.5-0.3c0.5-0.3,0.9-0.6,1.3-0.9
-                                                    c0.4-0.3,0.9-0.7,1.1-1.2c1.4-2.3,2.7-4.6,4-6.9c0.4-0.7,0.8-1.3,1.1-1.9c0.1-0.1,0.1-0.1,0.1-0.2L15,6.7z"/>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </a>
+                                    <div class="modal-course">
+                                        <span class="icon-modal"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -357,50 +221,20 @@
                                     lobortis fermentum as nunct.
                                     </p>
                                     <div class="course-time">
-                                        <svg version="1.1" id="calendar" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <path fill="#E8A126" d="M18.6,3.8h-13c-3,0-5.5,2.1-5.5,4.6v10.9c0,2.6,2.5,4.6,5.5,4.6h13c3,0,5.5-2.1,5.5-4.6l0,0V8.4
-                                                C24.1,5.9,21.6,3.8,18.6,3.8z M21.5,18.6L21.5,18.6c0,1.8-1.9,3.3-4.3,3.3H7c-2.4,0-4.3-1.5-4.3-3.3V11c0-1.8,1.9-3.3,4.3-3.3h10.2
-                                                c2.4,0,4.3,1.5,4.3,3.3C21.5,11,21.5,18.6,21.5,18.6z"/>
-                                                <polyline fill="none" stroke="#E8A126" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                                7.4,13.4 9.7,17 16.2,10.2 	"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M17.1,6.6H16c-0.5,0-0.9-0.4-0.9-0.9V2.1
-                                                c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C18,6.2,17.6,6.6,17.1,6.6z"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M12.6,6.5h-1.1c-0.5,0-0.9-0.4-0.9-0.9V2
-                                                c0-0.5,0.4-0.9,0.9-0.9h1.1c0.5,0,0.9,0.4,0.9,0.9v3.6C13.5,6.2,13.1,6.5,12.6,6.5z"/>
-                                            <path fill="#E8A126" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M8,6.6H6.9C6.4,6.6,6,6.2,6,5.7V2.1
-                                                c0-0.5,0.4-0.9,0.9-0.9H8c0.5,0,0.9,0.4,0.9,0.9v3.6C8.9,6.2,8.5,6.6,8,6.6z"/>
-                                            </g>
-                                        </svg>
-                                        <span><strong> Start:</strong> 12/05/2018</span>
+                                        <span class="icon-calendar"> </span>
+                                    <span><strong> Start:</strong> 12/05/2018</span>
                                         <br>
-                                        <div style="margin-top:5px;"><strong>Duration: </strong> 50 hrs.</div>
+                                        <div><strong>Duration: </strong> 50 hrs.</div>
                                     </div>
-                                    <a class="modal-course" href="#" >
-                                        <svg version="1.1" id="modal-courses" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <g>
-                                                <circle fill="#E62B38" cx="12" cy="12" r="12"/>
-                                                <g>
-                                                <path fill="#FCFCFC" d="M7.9,5.2c-1.2,0-2.2,1-2.2,2.1c0,1.2,1,2.1,2.2,2.1s2.2-1,2.2-2.1S9.1,5.2,7.9,5.2z M8,7.2
-                                                    C8,7.3,8,7.3,8,7.2L7.4,7.8c-0.1,0.1-0.1,0.1-0.2,0s-0.1-0.1,0-0.2l0.5-0.5V5.8c0-0.1,0.1-0.1,0.1-0.1l0.1,0.1L8,7.2L8,7.2L8,7.2
-                                                    L8,7.2z"/>
-                                                <path fill="#FCFCFC" d="M17.6,4.9c-0.3-0.2-0.5-0.3-0.8-0.3c-0.4,0-0.7,0.2-1,0.5s-0.4,0.7-0.6,1c-0.1,0.1-0.1,0.2-0.1,0.2
-                                                    l2.3,1.3c0.1-0.1,0.1-0.2,0.2-0.2c0.2-0.3,0.4-0.6,0.5-0.9C18.5,5.8,18.3,5.2,17.6,4.9z"/>
-                                                <path fill="#FCFCFC" d="M15,6.7c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.1,0.1-0.1,0.2c-0.5,0.8-0.9,1.5-1.3,2.3
-                                                    c-1.2,2-2.3,4.1-3.6,6.1c-0.6,0.9-0.6,1.8-0.6,2.8c0,0.4,0,0.7-0.1,1.1c0.2-0.1,0.3-0.2,0.5-0.3c0.5-0.3,0.9-0.6,1.3-0.9
-                                                    c0.4-0.3,0.9-0.7,1.1-1.2c1.4-2.3,2.7-4.6,4-6.9c0.4-0.7,0.8-1.3,1.1-1.9c0.1-0.1,0.1-0.1,0.1-0.2L15,6.7z"/>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </a>
+                                    <div class="modal-course">
+                                        <span class="icon-modal"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
-            </div>               
+                </div>
+            </div>            
             <div class="row">
                 <button class="btn bg-button btn-more" >MORE</button>
             </div>
@@ -410,19 +244,13 @@
 <section id="about">
     <div class="container p-0">
         <div class="row m-0 justify-content-center ">
-            <h1 class="text-center" >ABOUT</h1>
+            <h1 class="text-center">ABOUT</h1>
             <div class="row m-0">
                 <div class="col-lg col-sm-12 bg-video">
-                    <img class="img-fluid" src="assets/img/brow-course.jpeg" alt="">                        
-                   <!-- <img class="img-fluid  d-none d-md-block" src="assets/img/play.png" alt="play"> --> 
-                    <svg version="1.1" id="play" class="icon-landing play-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                        <g>
-                            <path fill="#E62535"  d="M24,2c12.2,0,22,9.8,22,22s-9.8,22-22,22S2,36.2,2,24S11.8,2,24,2 M24,0C10.8,0,0,10.8,0,24s10.8,24,24,24
-                                s24-10.8,24-24S37.2,0,24,0L24,0z"/>
-                        </g>
-                        <polygon fill="#E62535" points="18.4,15.2 33.6,24 18.4,32.8 "/>
-                    </svg>
-                    <!-- <img class="img-fluid play-icon d-block d-md-none " src="assets/img/play_sm.png" alt="play">                        -->
+                    <img class="img-fluid" src="assets/img/brow-course.jpeg" alt="">        
+                    <div class="about-play">
+                        <span class="icon-play"></span>    
+                    </div>                
                 </div>
                 <div class="col-lg col-sm-12 text-center text-about">
                     <p> Our company......learning, platform.....get success...easy...</p>
@@ -450,17 +278,7 @@
                         </div>
                         <div class="news-date bg-button">Mayo, 18</div>
                         <div class="news-more">
-                            <svg version="1.1" id="" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path fill="#E94E1E" d="M48.1,0.1c-26.6,0-48,21.6-48,48h48V0.1z"/>
-                                    </g>
-                                    <g>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="29.9" y1="19.5" x2="29.9" y2="37.7"/>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="38.9" y1="28.7" x2="20.9" y2="28.7"/>
-                                    </g>
-                                </g>
-                            </svg>  
+                            <span class="icon-news"></span>
                         </div>
                     </div>
                 </div>  
@@ -473,20 +291,10 @@
                         </div>
                         <div class="news-date bg-button">Mayo, 18</div>
                         <div class="news-more">
-                            <svg version="1.1" id="" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path fill="#E94E1E" d="M48.1,0.1c-26.6,0-48,21.6-48,48h48V0.1z"/>
-                                    </g>
-                                    <g>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="29.9" y1="19.5" x2="29.9" y2="37.7"/>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="38.9" y1="28.7" x2="20.9" y2="28.7"/>
-                                    </g>
-                                </g>
-                            </svg>  
+                            <span class="icon-news"></span>
                         </div>
                     </div>
-                </div>           
+                </div>  
             </div>
             <div class="card-deck">
                 <div class="card ">
@@ -498,17 +306,7 @@
                         </div>
                         <div class="news-date bg-button">Mayo, 18</div>
                         <div class="news-more">
-                            <svg version="1.1" id="" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path fill="#E94E1E" d="M48.1,0.1c-26.6,0-48,21.6-48,48h48V0.1z"/>
-                                    </g>
-                                    <g>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="29.9" y1="19.5" x2="29.9" y2="37.7"/>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="38.9" y1="28.7" x2="20.9" y2="28.7"/>
-                                    </g>
-                                </g>
-                            </svg>  
+                            <span class="icon-news"></span>
                         </div>
                     </div>
                 </div>  
@@ -521,20 +319,10 @@
                         </div>
                         <div class="news-date bg-button">Mayo, 18</div>
                         <div class="news-more">
-                            <svg version="1.1" id="" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path fill="#E94E1E" d="M48.1,0.1c-26.6,0-48,21.6-48,48h48V0.1z"/>
-                                    </g>
-                                    <g>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="29.9" y1="19.5" x2="29.9" y2="37.7"/>
-                                        <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width ="3" x1="38.9" y1="28.7" x2="20.9" y2="28.7"/>
-                                    </g>
-                                </g>
-                            </svg>  
+                            <span class="icon-news"></span>
                         </div>
                     </div>
-                </div>           
+                </div>  
             </div>
         </div>
         <div class="row m-0  ">
@@ -546,7 +334,7 @@
     <div class="push">  </div>
 </div>
 
-<footer class="footer">
+<footer id="footer-landing" class="footer">
     <div class="container p-0">
         <div class="row m-0">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -557,84 +345,11 @@
                         eosaddas qui ratione voluptatemasd sequi nesciunt.</p>
                     <br>
                     <div class="redes d-none d-lg-block">
-                        <!-- <img src="assets/img/face.png" alt="Facebook"> -->
-                        <svg version="1.1" id="facebook" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                   <g>
-                       <circle id="XMLID_21_" fill="#E62937" cx="12" cy="12" r="12"/>
-                       <path id="XMLID_19_" fill="#FFFFFF" d="M13,9.5V8.4c0-0.6,0.4-0.7,0.6-0.7c0.3,0,1.6,0,1.6,0V5.3H13c-2.5,0-3,1.8-3,3v1.3H8.6v1.7
-                           v1.1H10c0,3.2,0,7.1,0,7.1h2.8c0,0,0-3.9,0-7.1h2.1l0.1-1.1l0.1-1.8C15.1,9.5,13,9.5,13,9.5z"/>
-                   </g>
-                   </svg>
-
-                        <!-- <img src="assets/img/linke.png" alt="LinkedIn"> -->
-                        <svg version="1.1" id="linkedIn" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                   <g>
-                       <circle id="XMLID_108_" fill="#E62937" cx="12" cy="12" r="12"/>
-                       <g>
-                           <polygon id="XMLID_106_" fill="#FFFFFF" points="5.2,11.6 5.2,18.5 8.5,18.5 8.5,11 8.5,9 5.2,9 		"/>
-                           <circle id="XMLID_105_" fill="#FFFFFF" cx="6.8" cy="5.9" r="1.7"/>
-                           <path id="XMLID_104_" fill="#FFFFFF" d="M19.4,11.9c-0.2-1.8-1-2.9-3.4-2.9c-1.4,0-2.4,0.6-2.8,1.3h-0.1V9h-2.7v1.8v7.7h2.8v-4.7
-                               c0-1.3,0.3-2.4,1.8-2.4s1.6,1.4,1.6,2.5v4.6h2.9v-5.2l0,0C19.4,12.8,19.4,12.4,19.4,11.9z"/>
-                       </g>
-                   </g>
-                   </svg>
-
-                        <!-- <img src="assets/img/twit.png" alt="Twitter"> -->
-                        <svg version="1.1" id="twitter" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                   <g>
-                       <circle id="XMLID_49_" fill="#E62937" cx="12" cy="12" r="12"/>
-                       <path id="XMLID_47_" fill="#FFFFFF" d="M19.1,8.4c-0.5,0.3-1.1,0.4-1.6,0.4c0.6-0.4,1-0.9,1.3-1.6c-0.5,0.3-1.2,0.6-1.9,0.7
-                           C16.4,7.3,15.6,7,14.8,7c-1.6,0-2.9,1.3-2.9,2.9c0,0.3,0.1,0.4,0.1,0.6c-2.4-0.1-4.6-1.3-6-3C5.7,7.9,5.5,8.4,5.5,8.9
-                           c0,1,0.5,1.9,1.3,2.4c-0.5,0-0.9-0.1-1.3-0.4c0,0,0,0,0,0.1c0,0.4,0.1,0.7,0.2,1.1C6,13,6.8,13.7,7.8,13.9C7.6,14,7.3,14,7.1,14
-                           c-0.2,0-0.3,0-0.6-0.1c0.3,1.1,1.5,1.9,2.7,2c-1,0.8-2.3,1.3-3.6,1.3c-0.3,0-0.4,0-0.7,0c1.3,0.8,2.8,1.3,4.4,1.3
-                           c4.6,0,7.4-3.1,8.1-6.4c0.1-0.6,0.2-1.1,0.2-1.8c0-0.1,0-0.3,0-0.4C18.2,9.4,18.7,8.9,19.1,8.4z"/>
-                   </g>
-                   </svg>
-                   
-
-                        <!-- <img src="assets/img/googlplus.png" alt="Google Plus"> -->
-                        <svg version="1.1" id="google-plus" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                   <g>
-                       <circle id="XMLID_30_" fill="#E62535" cx="12" cy="12" r="12"/>
-                       <g>
-                           <path id="XMLID_27_" fill="#FFFFFF" d="M17.1,11.8c-0.1,0-0.2,0-0.3,0c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.2c0-0.3,0-0.7,0-1
-                               c0-0.1-0.1-0.2-0.1-0.2c-0.3,0-0.6,0-0.9,0c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.2c-0.5,0-0.9,0-1.4,0c0,0.1,0,0.2,0,0.2
-                               c0,0.2,0,0.5,0,0.7c0.2,0,0.5,0,0.7,0c0.2,0,0.4,0,0.6,0c0,0.5,0,0.9,0,1.4c0.3,0,0.7,0,1,0c0-0.5,0-0.9,0-1.4c0.5,0,0.9,0,1.4,0
-                               c0-0.3,0-0.5,0-0.8c0-0.1,0-0.2,0-0.2C17.8,11.8,17.5,11.8,17.1,11.8z"/>
-                           <path id="XMLID_26_" fill="#FFFFFF" d="M13.2,11.7c-0.9,0-1.7,0-2.6,0c-0.2,0-0.5,0-0.7,0c0,0-0.1,0.1-0.1,0.1c0,0.5,0,1,0,1.5
-                               c0.7,0,1.4,0,2.1,0c0,0.1,0,0.2-0.1,0.2c-0.3,1-1.3,1.4-2.4,1.3c-1.3-0.2-2.1-1.4-1.9-2.8c0-0.2,0.1-0.4,0.2-0.5
-                               c0.4-1,1.5-1.5,2.6-1.3c0.4,0.1,0.7,0.3,1,0.5c0.4-0.4,0.8-0.8,1.2-1.2c0,0-0.1,0-0.1-0.1c-0.9-0.8-2-1.1-3.2-0.9
-                               c-1.7,0.3-3,1.6-3.2,3.2c-0.1,0.7-0.1,1.4,0.2,2.1c0.7,1.7,2.3,2.7,4.2,2.5c0.9-0.1,1.7-0.4,2.3-1.1c0.9-1,1.1-2.1,1-3.4
-                               C13.5,11.7,13.4,11.7,13.2,11.7z"/>
-                       </g>
-                   </g>
-                   </svg>
-
-                        <!-- <img src="assets/img/skype.png" alt="Skype"> -->
-                        <svg version="1.1" id="skype" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                   <g>
-                       <circle id="XMLID_76_" fill="#E52234" cx="12" cy="12.1" r="12"/>
-                       <path fill="#FFFFFF" d="M18.8,13.3c0.1-0.5,0.2-0.9,0.2-1.4c0-0.2,0-0.3,0-0.5c-0.3-3.5-3.2-6.2-6.8-6.2c-0.4,0-0.8,0-1.2,0.1
-                           c-0.6-0.4-1.3-0.6-2.1-0.6C6.7,4.6,5,6.4,5,8.5c0,0.7,0.2,1.4,0.5,2c-0.1,0.2-0.1,0.5-0.1,0.7c0,0.2,0,0.4,0,0.6
-                           c0,3.7,3,6.7,6.8,6.7c0.4,0,0.8,0,1.2-0.1c0.6,0.3,1.2,0.5,1.9,0.5c2.2,0,3.9-1.7,3.9-3.9C19.2,14.4,19,13.8,18.8,13.3z M15.6,15
-                           c-0.3,0.4-0.8,0.8-1.4,1c-0.6,0.2-1.3,0.4-2.1,0.4c-1,0-1.8-0.2-2.4-0.5c-0.5-0.2-0.8-0.6-1.1-1c-0.3-0.4-0.4-0.8-0.4-1.2
-                           c0-0.2,0.1-0.5,0.3-0.6c0.2-0.2,0.4-0.3,0.7-0.3c0.2,0,0.4,0.1,0.6,0.2c0.2,0.1,0.3,0.3,0.4,0.6c0.1,0.3,0.3,0.5,0.4,0.7
-                           c0.1,0.2,0.3,0.3,0.6,0.4c0.2,0.1,0.6,0.2,1,0.2c0.6,0,1-0.1,1.4-0.4c0.3-0.2,0.5-0.5,0.5-0.8c0-0.3-0.1-0.5-0.3-0.6
-                           c-0.2-0.2-0.4-0.3-0.7-0.4c-0.3-0.1-0.7-0.2-1.2-0.3c-0.7-0.1-1.3-0.3-1.8-0.5c-0.5-0.2-0.9-0.5-1.2-0.8c-0.1-0.1-0.2-0.2-0.2-0.4
-                           c-0.1-0.3-0.2-0.6-0.2-1c0-0.5,0.2-1,0.5-1.4c0.3-0.4,0.7-0.7,1.3-0.9c0.6-0.2,1.2-0.3,2-0.3c0.6,0,1.1,0.1,1.6,0.2
-                           c0.4,0.1,0.8,0.3,1.1,0.6c0.3,0.2,0.5,0.5,0.7,0.7c0.1,0.3,0.2,0.5,0.2,0.8c0,0.2-0.1,0.5-0.3,0.6c-0.2,0.2-0.4,0.3-0.7,0.3
-                           c-0.3,0-0.4-0.1-0.6-0.2C14,10,13.9,9.8,13.7,9.6c-0.2-0.3-0.4-0.6-0.6-0.7c-0.2-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.9,0.1-1.2,0.3
-                           c-0.3,0.2-0.4,0.4-0.4,0.6c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.2,0.1,0.4,0.2,0.5,0.2c0,0,0.1,0,0.1,0
-                           c0.2,0,0.5,0.1,0.8,0.2c0.5,0.1,1.1,0.2,1.5,0.4c0.5,0.1,0.8,0.3,1.2,0.5c0.3,0.2,0.6,0.5,0.8,0.8c0.2,0.3,0.3,0.7,0.3,1.2
-                           C16.1,14.1,15.9,14.6,15.6,15z"/>
-                   </g>
-                   </svg>
-
+                        <div><span class="icon-facebook"></span></div>
+                        <div><span class="icon-linkedin"></span></div>
+                        <div><span class="icon-twitter"></span></div>
+                        <div><span class="icon-googleplus"></span></div>
+                        <!-- <div><span class="icon-skype"></span></div>                                            -->
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3">
@@ -653,91 +368,19 @@
                 </div>
                 <div class="contact-us">
                     <h6>DELUXUS SAC</h6>
-                    <span>iohasd@deluxus.co</span><br> 
-                    <span>+51 1 923442349</span><br> 
-                    <div class="address">
-                            <p> 223 direccion ubicacion</p>
-                            <p>Lima, Perú</p>
-                    </div>
-                    <div class="redes d-block d-lg-none" >
-                            <svg version="1.1" id="facebook" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                       <g>
-                           <circle id="XMLID_21_" fill="#E62937" cx="12" cy="12" r="12"/>
-                           <path id="XMLID_19_" fill="#FFFFFF" d="M13,9.5V8.4c0-0.6,0.4-0.7,0.6-0.7c0.3,0,1.6,0,1.6,0V5.3H13c-2.5,0-3,1.8-3,3v1.3H8.6v1.7
-                               v1.1H10c0,3.2,0,7.1,0,7.1h2.8c0,0,0-3.9,0-7.1h2.1l0.1-1.1l0.1-1.8C15.1,9.5,13,9.5,13,9.5z"/>
-                       </g>
-                       </svg>
-    
-                            <!-- <img src="assets/img/linke.png" alt="LinkedIn"> -->
-                            <svg version="1.1" id="linkedIn" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                       <g>
-                           <circle id="XMLID_108_" fill="#E62937" cx="12" cy="12" r="12"/>
-                           <g>
-                               <polygon id="XMLID_106_" fill="#FFFFFF" points="5.2,11.6 5.2,18.5 8.5,18.5 8.5,11 8.5,9 5.2,9 		"/>
-                               <circle id="XMLID_105_" fill="#FFFFFF" cx="6.8" cy="5.9" r="1.7"/>
-                               <path id="XMLID_104_" fill="#FFFFFF" d="M19.4,11.9c-0.2-1.8-1-2.9-3.4-2.9c-1.4,0-2.4,0.6-2.8,1.3h-0.1V9h-2.7v1.8v7.7h2.8v-4.7
-                                   c0-1.3,0.3-2.4,1.8-2.4s1.6,1.4,1.6,2.5v4.6h2.9v-5.2l0,0C19.4,12.8,19.4,12.4,19.4,11.9z"/>
-                           </g>
-                       </g>
-                       </svg>
-    
-                            <!-- <img src="assets/img/twit.png" alt="Twitter"> -->
-                            <svg version="1.1" id="twitter" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                       <g>
-                           <circle id="XMLID_49_" fill="#E62937" cx="12" cy="12" r="12"/>
-                           <path id="XMLID_47_" fill="#FFFFFF" d="M19.1,8.4c-0.5,0.3-1.1,0.4-1.6,0.4c0.6-0.4,1-0.9,1.3-1.6c-0.5,0.3-1.2,0.6-1.9,0.7
-                               C16.4,7.3,15.6,7,14.8,7c-1.6,0-2.9,1.3-2.9,2.9c0,0.3,0.1,0.4,0.1,0.6c-2.4-0.1-4.6-1.3-6-3C5.7,7.9,5.5,8.4,5.5,8.9
-                               c0,1,0.5,1.9,1.3,2.4c-0.5,0-0.9-0.1-1.3-0.4c0,0,0,0,0,0.1c0,0.4,0.1,0.7,0.2,1.1C6,13,6.8,13.7,7.8,13.9C7.6,14,7.3,14,7.1,14
-                               c-0.2,0-0.3,0-0.6-0.1c0.3,1.1,1.5,1.9,2.7,2c-1,0.8-2.3,1.3-3.6,1.3c-0.3,0-0.4,0-0.7,0c1.3,0.8,2.8,1.3,4.4,1.3
-                               c4.6,0,7.4-3.1,8.1-6.4c0.1-0.6,0.2-1.1,0.2-1.8c0-0.1,0-0.3,0-0.4C18.2,9.4,18.7,8.9,19.1,8.4z"/>
-                       </g>
-                       </svg>
-                       
-    
-                            <!-- <img src="assets/img/googlplus.png" alt="Google Plus"> -->
-                            <svg version="1.1" id="google-plus" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                       <g>
-                           <circle id="XMLID_30_" fill="#E62535" cx="12" cy="12" r="12"/>
-                           <g>
-                               <path id="XMLID_27_" fill="#FFFFFF" d="M17.1,11.8c-0.1,0-0.2,0-0.3,0c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.2c0-0.3,0-0.7,0-1
-                                   c0-0.1-0.1-0.2-0.1-0.2c-0.3,0-0.6,0-0.9,0c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.2c-0.5,0-0.9,0-1.4,0c0,0.1,0,0.2,0,0.2
-                                   c0,0.2,0,0.5,0,0.7c0.2,0,0.5,0,0.7,0c0.2,0,0.4,0,0.6,0c0,0.5,0,0.9,0,1.4c0.3,0,0.7,0,1,0c0-0.5,0-0.9,0-1.4c0.5,0,0.9,0,1.4,0
-                                   c0-0.3,0-0.5,0-0.8c0-0.1,0-0.2,0-0.2C17.8,11.8,17.5,11.8,17.1,11.8z"/>
-                               <path id="XMLID_26_" fill="#FFFFFF" d="M13.2,11.7c-0.9,0-1.7,0-2.6,0c-0.2,0-0.5,0-0.7,0c0,0-0.1,0.1-0.1,0.1c0,0.5,0,1,0,1.5
-                                   c0.7,0,1.4,0,2.1,0c0,0.1,0,0.2-0.1,0.2c-0.3,1-1.3,1.4-2.4,1.3c-1.3-0.2-2.1-1.4-1.9-2.8c0-0.2,0.1-0.4,0.2-0.5
-                                   c0.4-1,1.5-1.5,2.6-1.3c0.4,0.1,0.7,0.3,1,0.5c0.4-0.4,0.8-0.8,1.2-1.2c0,0-0.1,0-0.1-0.1c-0.9-0.8-2-1.1-3.2-0.9
-                                   c-1.7,0.3-3,1.6-3.2,3.2c-0.1,0.7-0.1,1.4,0.2,2.1c0.7,1.7,2.3,2.7,4.2,2.5c0.9-0.1,1.7-0.4,2.3-1.1c0.9-1,1.1-2.1,1-3.4
-                                   C13.5,11.7,13.4,11.7,13.2,11.7z"/>
-                           </g>
-                       </g>
-                       </svg>
-    
-                            <!-- <img src="assets/img/skype.png" alt="Skype"> -->
-                            <svg version="1.1" id="skype" class="icon-landing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                       <g>
-                           <circle id="XMLID_76_" fill="#E52234" cx="12" cy="12.1" r="12"/>
-                           <path fill="#FFFFFF" d="M18.8,13.3c0.1-0.5,0.2-0.9,0.2-1.4c0-0.2,0-0.3,0-0.5c-0.3-3.5-3.2-6.2-6.8-6.2c-0.4,0-0.8,0-1.2,0.1
-                               c-0.6-0.4-1.3-0.6-2.1-0.6C6.7,4.6,5,6.4,5,8.5c0,0.7,0.2,1.4,0.5,2c-0.1,0.2-0.1,0.5-0.1,0.7c0,0.2,0,0.4,0,0.6
-                               c0,3.7,3,6.7,6.8,6.7c0.4,0,0.8,0,1.2-0.1c0.6,0.3,1.2,0.5,1.9,0.5c2.2,0,3.9-1.7,3.9-3.9C19.2,14.4,19,13.8,18.8,13.3z M15.6,15
-                               c-0.3,0.4-0.8,0.8-1.4,1c-0.6,0.2-1.3,0.4-2.1,0.4c-1,0-1.8-0.2-2.4-0.5c-0.5-0.2-0.8-0.6-1.1-1c-0.3-0.4-0.4-0.8-0.4-1.2
-                               c0-0.2,0.1-0.5,0.3-0.6c0.2-0.2,0.4-0.3,0.7-0.3c0.2,0,0.4,0.1,0.6,0.2c0.2,0.1,0.3,0.3,0.4,0.6c0.1,0.3,0.3,0.5,0.4,0.7
-                               c0.1,0.2,0.3,0.3,0.6,0.4c0.2,0.1,0.6,0.2,1,0.2c0.6,0,1-0.1,1.4-0.4c0.3-0.2,0.5-0.5,0.5-0.8c0-0.3-0.1-0.5-0.3-0.6
-                               c-0.2-0.2-0.4-0.3-0.7-0.4c-0.3-0.1-0.7-0.2-1.2-0.3c-0.7-0.1-1.3-0.3-1.8-0.5c-0.5-0.2-0.9-0.5-1.2-0.8c-0.1-0.1-0.2-0.2-0.2-0.4
-                               c-0.1-0.3-0.2-0.6-0.2-1c0-0.5,0.2-1,0.5-1.4c0.3-0.4,0.7-0.7,1.3-0.9c0.6-0.2,1.2-0.3,2-0.3c0.6,0,1.1,0.1,1.6,0.2
-                               c0.4,0.1,0.8,0.3,1.1,0.6c0.3,0.2,0.5,0.5,0.7,0.7c0.1,0.3,0.2,0.5,0.2,0.8c0,0.2-0.1,0.5-0.3,0.6c-0.2,0.2-0.4,0.3-0.7,0.3
-                               c-0.3,0-0.4-0.1-0.6-0.2C14,10,13.9,9.8,13.7,9.6c-0.2-0.3-0.4-0.6-0.6-0.7c-0.2-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.9,0.1-1.2,0.3
-                               c-0.3,0.2-0.4,0.4-0.4,0.6c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.2,0.1,0.4,0.2,0.5,0.2c0,0,0.1,0,0.1,0
-                               c0.2,0,0.5,0.1,0.8,0.2c0.5,0.1,1.1,0.2,1.5,0.4c0.5,0.1,0.8,0.3,1.2,0.5c0.3,0.2,0.6,0.5,0.8,0.8c0.2,0.3,0.3,0.7,0.3,1.2
-                               C16.1,14.1,15.9,14.6,15.6,15z"/>
-                       </g>
+                    <p>iohasd@deluxus.co</p> 
+                    <p>+51 1 923442349</p> 
+                    <p> 223 direccion ubicacion</p>
+                    <p>Lima, Perú</p>                  
+                    <div class="contact d-block d-lg-none" >
+                        <div><span class="icon-facebook"></span></div>
+                        <div><span class="icon-linkedin"></span></div>
+                        <div><span class="icon-twitter"></span></div>
+                        <div><span class="icon-googleplus"></span></div>
+                        <!-- <div><span class="icon-skype"></span></div>    -->
                     </div>
                 </div>
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle language" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Language
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

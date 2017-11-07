@@ -13,6 +13,62 @@
 /*rgb(46,55,62)*/
 /*rgb(104,129,107)*/
 /*rgb(65,64,66)*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?dq1iv2");
+  src: url("../fonts/icomoon.eot?dq1iv2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?dq1iv2") format("truetype"), url("../fonts/icomoon.woff?dq1iv2") format("woff"), url("../fonts/icomoon.svg?dq1iv2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-skype:before {
+  content: "\e908"; }
+
+.icon-calendar:before {
+  content: "\e900";
+  color: #e9a227;
+  font-size: 1.2rem; }
+
+.icon-facebook:before {
+  content: "\e901"; }
+
+.icon-googleplus:before {
+  content: "\e902"; }
+
+.icon-linkedin:before {
+  content: "\e903"; }
+
+.icon-modal:before {
+  content: "\e904";
+  font-size: 1.4rem;
+  color: white; }
+
+.icon-news:before {
+  content: "\e905";
+  color: white;
+  font-weight: bold; }
+
+.icon-play:before {
+  content: "\e906";
+  color: #c71f1e; }
+
+.icon-search:before {
+  content: "\e907"; }
+
+.icon-twitter:before {
+  content: "\e90a"; }
+
 html, body {
   height: 100%; }
 
@@ -25,10 +81,10 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 0 -701px; }
+  margin: 0 0 -665px; }
 
 .push {
-  height: 701px; }
+  height: 665px; }
 
 .m-0 {
   margin: 0; }
@@ -66,7 +122,8 @@ section {
 
 #icon-search {
   width: 22px;
-  margin-left: 6px; }
+  margin-left: 6px;
+  color: #c6161a; }
 
 .btn-lg {
   margin: 0 auto;
@@ -99,18 +156,28 @@ h1:first-child {
   font-weight: bold; }
 
 /* NAV */
-.navbar-brand img {
+#nav-landing .navbar-brand img {
   width: 50%; }
-
-.nav-link {
+#nav-landing .nav-link {
   font-size: 14px; }
-
-nav a {
+#nav-landing nav a {
   color: #1c1e1e; }
-
-.nav-item {
+#nav-landing .nav-item {
   margin: 0 10px; }
-  .nav-item button:hover {
+  #nav-landing .nav-item .search {
+    width: 30px;
+    height: 30px;
+    padding: 4px; }
+    #nav-landing .nav-item .search .icon-search {
+      font-size: 20px;
+      color: #e52234; }
+      #nav-landing .nav-item .search .icon-search:hover {
+        color: white; }
+    #nav-landing .nav-item .search:hover {
+      border-radius: 50%;
+      background: #e52234;
+      cursor: pointer; }
+  #nav-landing .nav-item button:hover {
     cursor: pointer; }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -125,10 +192,6 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.in-dark {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
 
 .text-slider {
   color: white;
@@ -158,11 +221,6 @@ nav a {
     font-size: 0.8rem;
     color: #66816b; }
 
-.search {
-  position: absolute;
-  top: 50%;
-  left: 5%; }
-
 /* COURSES */
 #browser-courses h1 {
   color: #c6161a; }
@@ -187,15 +245,21 @@ h3 {
 
 .course-time {
   font-size: 12px; }
-  .course-time svg {
-    width: 20px; }
+  .course-time div {
+    margin-top: 5px; }
 
 .modal-course {
   position: absolute;
   bottom: 5%;
-  right: 8%; }
-  .modal-course svg {
-    width: 32px; }
+  right: 8%;
+  padding: 6px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #e52234;
+  cursor: pointer; }
+  .modal-course:hover {
+    background: #b5191b; }
 
 .tag-soon {
   position: absolute;
@@ -227,12 +291,12 @@ h3 {
   .bg-video img:first-child {
     opacity: 0.4; }
 
-.play-icon {
+.about-play {
   position: absolute;
-  width: 50px;
+  font-size: 2.4rem;
   top: 33%;
-  left: 40%; }
-  .play-icon:hover {
+  left: 42%; }
+  .about-play:hover {
     cursor: pointer; }
 
 .text-about {
@@ -246,6 +310,8 @@ h3 {
 #news .row:last-child {
   display: flex;
   justify-content: center; }
+#news .card {
+  position: relative; }
 #news .card-img:hover {
   -webkit-filter: grayscale(1);
   filter: grayscale(1); }
@@ -276,16 +342,19 @@ h3 {
 .news-more {
   position: absolute;
   bottom: 0;
-  right: 0; }
-  .news-more svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 31px; }
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 100%;
+  background: #e84d1b; }
   .news-more:hover {
-    cursor: pointer; }
-    .news-more:hover path {
-      fill: #e8a126; }
+    cursor: pointer;
+    background: #e8a126; }
+  .news-more .icon-news {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    font-size: 0.8rem; }
 
 .card-img-overlay {
   display: flex;
@@ -294,35 +363,33 @@ h3 {
   align-items: flex-end; }
 
 /* FOOTER */
-.footer {
+#footer-landing {
+  height: 665px;
   background: #2e373e;
   color: white; }
-
-footer {
-  height: 701px; }
-  footer .row {
+  #footer-landing .row {
     padding: 70px 20px; }
-    footer .row p {
+    #footer-landing .row p {
       font-size: 0.8rem;
       font-weight: 300; }
-  footer h3 {
+  #footer-landing h3 {
     border-bottom: 1px solid white;
     padding: 12px 0;
     font-weight: 600;
     font-size: 1.2rem; }
-  footer > p {
+  #footer-landing > p {
     background: #1c1e1e;
     font-size: 0.7rem;
     padding: 5px 0; }
-  footer .nav-link {
+  #footer-landing .nav-link {
     position: absolute;
     right: 0;
     font-size: 0.7rem;
     font-weight: 300; }
-    footer .nav-link:hover {
+    #footer-landing .nav-link:hover {
       color: white;
       font-weight: 500; }
-    footer .nav-link .dropdown-item {
+    #footer-landing .nav-link .dropdown-item {
       font-size: 0.5rem; }
 
 .links {
@@ -344,9 +411,6 @@ footer {
 .contact-us p {
   margin: 0; }
 
-a {
-  color: white; }
-
 .subscribe {
   margin-bottom: 20px; }
   .subscribe input {
@@ -362,15 +426,38 @@ a {
       cursor: pointer;
       background: #b5191b; }
 
-.contact-us span {
-  font-size: 0.8rem; }
+.redes div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #c6161a;
+  padding: 11px;
+  margin: 0 5px;
+  display: inline; }
+  .redes div span {
+    font-size: 1.3rem; }
+  .redes div:hover {
+    background: #b5191b;
+    cursor: pointer; }
 
-.redes svg {
-  width: 24px;
-  margin: 20px 5px;
-  cursor: pointer; }
-  .redes svg:hover circle:first-child {
-    fill: #b5191b; }
+.contact {
+  margin-top: 20px; }
+  .contact div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #c6161a;
+    padding: 3px 7px;
+    margin: 0 4px;
+    display: inline; }
+    .contact div span {
+      font-size: 1rem; }
+    .contact div:hover {
+      background: #b5191b;
+      cursor: pointer; }
+
+.language {
+  color: white; }
 
 #scroll {
   position: fixed;
@@ -409,26 +496,26 @@ a {
     font-size: 1rem; } }
 @media only screen and (min-width: 370px) {
   .wrapper {
-    margin: 0 0 -682px; }
+    margin: 0 0 -647px; }
 
   .push {
-    height: 682px; }
+    height: 647px; }
 
-  footer {
-    height: 682px; } }
+  #footer-landing {
+    height: 647px; } }
 @media only screen and (min-width: 420px) {
   .wrapper {
-    margin: 0 0 -662px; }
+    margin: 0 0 -627px; }
 
   .push {
-    height: 662px; }
+    height: 627px; }
 
-  footer {
-    height: 662px; }
+  #footer-landing {
+    height: 627px; }
 
-  .play-icon {
-    width: 54px;
-    top: 36%;
+  .about-play {
+    font-size: 3.4rem;
+    top: 41%;
     left: 43%; } }
 @media only screen and (min-width: 480px) {
   section h1 {
@@ -443,7 +530,7 @@ a {
   .push {
     height: 663px; }
 
-  footer {
+  #footer-landing {
     height: 663px; }
 
   .card-deck {
@@ -453,13 +540,13 @@ a {
     font-size: 1.11rem; } }
 @media only screen and (min-width: 768px) {
   .wrapper {
-    margin: 0 0 -683px; }
+    margin: 0 0 -657px; }
 
   .push {
-    height: 683px; }
+    height: 657px; }
 
-  footer {
-    height: 683px; }
+  #footer-landing {
+    height: 657px; }
 
   section h1 {
     font-size: 2rem; }
@@ -496,10 +583,10 @@ a {
   .text-about p {
     font-size: 28px; }
 
-  .play-icon {
-    width: 14%;
+  .about-play {
+    font-size: 5rem;
     top: 40%;
-    left: 45%; }
+    left: 47%; }
 
   .news-p {
     font-size: 1.3rem; }
@@ -516,27 +603,25 @@ a {
   .news-date {
     font-size: 1rem; }
 
-  .news-more svg {
-    width: 55px; }
+  .news-more {
+    width: 50px;
+    height: 50px; }
+    .news-more .icon-news {
+      bottom: 12px;
+      right: 12px;
+      font-size: 1.1rem; }
 
-  footer .row p {
+  #footer-landing .row p {
     font-size: 1rem; }
-  footer h3 {
+  #footer-landing h3 {
     font-size: 1.4rem; }
-  footer > p {
+  #footer-landing > p {
     font-size: 0.8rem; }
-  footer .nav-link {
+  #footer-landing .nav-link {
     font-size: 0.8rem; }
 
   .subscribe button {
-    font-size: 0.8rem; }
-
-  .contact-us span {
-    font-size: 0.9rem; }
-
-  .redes svg {
-    width: 30px;
-    margin: 17px 5px; } }
+    font-size: 0.8rem; } }
 @media only screen and (min-width: 992px) {
   section h1 {
     font-size: 2.5rem;
@@ -555,26 +640,22 @@ a {
   .push {
     height: 444px; }
 
-  .play-icon {
-    width: 60px;
-    top: 40%;
-    left: 45%; }
+  .about-play {
+    font-size: 4rem;
+    top: 34%;
+    left: 41%; }
 
-  footer {
+  #footer-landing {
     height: 444px; }
 
-  footer > p {
+  #footer-landing > p {
     font-size: 0.9rem; }
 
   .news-p {
     font-size: 1.5rem; }
 
   .card-deck {
-    flex-flow: row nowrap; }
-
-  .redes svg {
-    width: 35px;
-    margin: 0 6px; } }
+    flex-flow: row nowrap; } }
 @media only screen and (min-width: 1200px) {
   section h1 {
     font-size: 3rem;
@@ -598,10 +679,9 @@ a {
   .push {
     height: 492px; }
 
-  .navbar-brand img {
+  #nav-landing .navbar-brand img {
     width: 70%; }
-
-  .navbar {
+  #nav-landing .navbar {
     position: absolute;
     top: 0;
     z-index: 200;
@@ -609,10 +689,15 @@ a {
     width: 100%;
     margin: 0 auto;
     padding: 0; }
-
-  .nav-link {
+  #nav-landing .nav-link {
     font-size: 16px;
     font-weight: 600; }
+  #nav-landing .nav-item .search {
+    width: 40px;
+    height: 40px;
+    padding: 5px; }
+    #nav-landing .nav-item .search .icon-search {
+      font-size: 30px; }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 30px;
@@ -651,10 +736,10 @@ a {
     padding: 8px;
     border-bottom-left-radius: 30%; }
 
-  .play-icon {
-    width: 70px;
-    top: 40%;
-    left: 45%; }
+  .about-play {
+    font-size: 5rem;
+    top: 35%;
+    left: 44%; }
 
   .text-about p {
     font-size: 32px; }
@@ -681,21 +766,26 @@ a {
   .news-p {
     font-size: 2rem; }
 
-  .news-more svg {
-    width: 40px; }
+  .news-more {
+    width: 55px;
+    height: 55px; }
+    .news-more .icon-news {
+      bottom: 13px;
+      right: 13px;
+      font-size: 1.3rem; }
 
   /* FOOTER */
-  footer {
+  #footer-landing {
     height: 492px; }
-    footer .row {
+    #footer-landing .row {
       padding: 70px 0; }
-      footer .row p {
+      #footer-landing .row p {
         font-size: 1.2rem; }
-    footer h3 {
+    #footer-landing h3 {
       font-size: 2rem; }
-    footer > p {
+    #footer-landing > p {
       font-size: 0.9rem; }
-    footer .nav-link {
+    #footer-landing .nav-link {
       font-size: 0.9rem; }
 
   .links {
@@ -712,14 +802,8 @@ a {
 
   .contact-us h6 {
     font-size: 1.5rem; }
-  .contact-us span {
-    font-size: 1rem; }
-  .contact-us .address p {
-    font-size: 1rem; }
-
-  .redes svg {
-    width: 38px;
-    margin: 0 6px; } }
+  .contact-us p {
+    font-size: 1rem; } }
 @media only screen and (min-width: 1800px) {
   section h1 {
     font-size: 5rem;
@@ -744,25 +828,21 @@ a {
   .push {
     height: 643px; }
 
-  #search {
-    width: 80px;
-    height: 80px; }
-
-  #icon-search {
-    width: 45px;
-    margin: 6px; }
-
   nav .container-fluid {
     padding: 20px 50px; }
 
-  .navbar-brand img {
+  #nav-landing .navbar-brand img {
     width: 100%; }
-
-  .nav-link {
+  #nav-landing .nav-link {
     font-size: 2rem; }
-
-  .nav-item {
+  #nav-landing .nav-item {
     margin: 1.5rem; }
+    #nav-landing .nav-item .search {
+      width: 70px;
+      height: 70px;
+      padding: 11px; }
+      #nav-landing .nav-item .search .icon-search {
+        font-size: 45px; }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 40px;
@@ -803,13 +883,9 @@ a {
 
   .course-time {
     font-size: 1.3rem; }
-    .course-time svg {
-      width: 35px; }
 
   .modal-course {
     right: 15%; }
-    .modal-course svg {
-      width: 50px; }
 
   .tag-soon {
     font-size: 1rem;
@@ -819,10 +895,10 @@ a {
   #about .container {
     max-width: 1770px; }
 
-  .play-icon {
-    top: 38%;
-    left: 42%;
-    width: 140px; }
+  .about-play {
+    font-size: 8rem;
+    top: 35%;
+    left: 40%; }
 
   .text-about p {
     font-size: 3rem; }
@@ -851,25 +927,28 @@ a {
   #news .row:last-child {
     justify-content: flex-end; }
 
-  .news-more svg {
-    bottom: 2px;
-    right: 2px;
-    width: 80px; }
+  .news-more {
+    width: 100px;
+    height: 100px; }
+    .news-more .icon-news {
+      bottom: 20px;
+      right: 20px;
+      font-size: 2.5rem; }
 
   /* FOOTER */
-  footer {
-    height: 643px; }
-    footer .container {
+  #footer-landing {
+    height: 602px; }
+    #footer-landing .container {
       max-width: 1770px; }
-    footer .row {
+    #footer-landing .row {
       padding: 70px 0; }
-      footer .row p {
-        font-size: 2rem; }
-    footer h3 {
+      #footer-landing .row p {
+        font-size: 1.6rem; }
+    #footer-landing h3 {
       font-size: 3rem; }
-    footer p {
+    #footer-landing p {
       font-size: 1.2rem; }
-    footer .nav-link {
+    #footer-landing .nav-link {
       font-size: 1.5rem; }
 
   .links {
@@ -888,14 +967,8 @@ a {
 
   .contact-us h6 {
     font-size: 2rem; }
-  .contact-us span {
+  .contact-us > p {
     font-size: 1.5rem; }
-  .contact-us .address p {
-    font-size: 1.5rem; }
-
-  .redes svg {
-    width: 60px;
-    margin: 0 10px; }
 
   #scroll {
     width: 80px;
